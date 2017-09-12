@@ -22,6 +22,7 @@ def encode(word):
     return output
 
 if __name__ == '__main__':
-    user_input = input()
+    while True:
+        user_input = input()
 
-    print(encode(user_input))
+        print(encode(user_input))
