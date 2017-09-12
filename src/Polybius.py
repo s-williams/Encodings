@@ -12,11 +12,16 @@ def get_poly_value(letter):
                 return str(k + 1) + str(j + 1)
     return ''
 
-if __name__ == '__main__':
-    user_input = input()
+
+def encode(word):
     output = ''
 
-    for i in user_input:
+    for i in word:
         output += get_poly_value(i)
 
-    print(output)
+    return output
+
+if __name__ == '__main__':
+    user_input = input()
+
+    print(encode(user_input))
