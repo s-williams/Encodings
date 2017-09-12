@@ -8,7 +8,8 @@ def encode(words, number=5):
     shifted_alphabet = alphabet[number:] + alphabet[:number]
 
     for letter in words.lower():
-        output += shifted_alphabet[alphabet.index(letter)]
+        if letter in alphabet:
+            output += shifted_alphabet[alphabet.index(letter)]
 
     return output
 
