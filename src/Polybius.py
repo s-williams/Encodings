@@ -16,7 +16,7 @@ def get_poly_value(letter):
 def encode(word):
     output = ''
 
-    for letter in word:
+    for letter in word.lower():
         output += get_poly_value(letter)
 
     return output
