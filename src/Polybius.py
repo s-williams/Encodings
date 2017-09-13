@@ -6,12 +6,12 @@ polybius = [['a', 'b', 'c', 'd', 'e'],
 
 
 def get_poly_value(letter):
+    if letter == 'j':
+        return get_poly_value('i')
     for k in range(5):
         for j in range(5):
             if letter == polybius[k][j]:
                 return str(k + 1) + str(j + 1)
-            if letter == 'j':
-                return str(24)
     return ''
 
 
