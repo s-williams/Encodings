@@ -13,6 +13,10 @@ def encode(words, number=5):
 
     return output
 
+
+def decode(words, number=-5):
+    return encode(words, number)
+
 if __name__ == '__main__':
     while True:
         user_input = input()
